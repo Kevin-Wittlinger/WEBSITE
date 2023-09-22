@@ -197,7 +197,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Todo List",
+    name: "To-do List",
     description:
       "Todo list using nextjs, react, and prisma. Checklist allows the user to cross out items put on the todo list.",
     tags: [
@@ -215,7 +215,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Kevin-Wittlinger/Todo-List",
   },
   {
     name: "Binary Search Tree",
@@ -238,7 +238,7 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Kevin-Wittlinger/Binary-tree",
   },
   {
     name: "Number theory Lab",
@@ -259,7 +259,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Kevin-Wittlinger/Lab-Topsort",
   },
 ];
 
