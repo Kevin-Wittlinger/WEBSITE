@@ -55,7 +55,7 @@ const About = () => {
         //Text below the introduction title
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        As a Computer Science Major, I plan to bring a unquie blend of skills
+        As a Computer Science Major, I plan to bring a unqiue blend of skills
         that will allow me to thrive in the tech industry. This includes
         knowledge of key frameworks and languages such as React, Data structures
         and Python just to name a few. I look forward to communicating with

@@ -123,7 +123,7 @@ const experiences = [
     date: "June 2021 - August 2023",
     points: [
       "Assisted Teacher in educating a group of kids aged 8-10 on sketching, painting and other art mediums.",
-      "Disscussed about lesson plans as well as materials needed to enable those lessons.",
+      "Discussed about lesson plans as well as materials needed to enable those lessons.",
       "Needed to show up on time and work schedule around other assistants and what was needed.",
       "Made me more imaginative and creative in my work, interested in design.",
     ],
