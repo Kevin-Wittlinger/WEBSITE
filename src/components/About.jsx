@@ -55,12 +55,15 @@ const About = () => {
         //Text below the introduction title
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        As a Computer Science Major, I plan to bring a unqiue blend of skills
-        that will allow me to thrive in the tech industry. This includes
-        knowledge of key frameworks and languages such as React, Data structures
-        and Python just to name a few. I look forward to communicating with
-        other Computer Scientists to make more innovative projects. Below are
-        some of my hobbies outside of the computer science realm.
+        Welcome to my Website! I created this website to shed light on myself
+        as an individual and show off the experiences I have had throughout
+        my professonal career. Currently, I'm in my senior year of college 
+        and plan on obtaining a Bacholars in Information Systems at 
+        Stevens Institute of Technology on May 2026. I have gained so many 
+        unique skills throughout my time at college and hope to translate
+        what I have learned into the workforce. Below are some hobbies/interests
+        I have taken up throughout my time in college. 
+        
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
