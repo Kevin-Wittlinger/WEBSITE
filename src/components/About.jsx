@@ -55,14 +55,18 @@ const About = () => {
         //Text below the introduction title
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        Welcome to my Website! I created this website to shed light on myself
-        as an individual and show off the experiences I have had throughout
-        my professonal career. Currently, I'm in my senior year of college 
-        and plan on obtaining a Bacholars in Information Systems at 
-        Stevens Institute of Technology on May 2026. I have gained so many 
-        unique skills throughout my time at college and hope to translate
-        what I have learned into the workforce. Below are some hobbies/interests
-        I have taken up throughout my time in college. 
+        Welcome to my Website! I created this site to give you a glimpse into
+        who I am as an individual and to showcase the experiences and opportunities 
+        that have helped shape me into who I am. 
+  
+        I earned my Bachelor of Science in Information Systems from Stevens Institute of Technology
+        in May 2026. I am grateful for the unique skills, experiences, and friendships I gained 
+        throughout my college journey, and I look forward to applying what I have learned as I 
+        begin my professional career.
+
+        Below, you can explore some of the hobbies and interests I have developed throughout my 
+        time in college, as well as learn more about my experiences, projects, and interests.
+  
         
       </motion.p>
 
