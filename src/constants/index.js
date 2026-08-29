@@ -158,6 +158,54 @@ const experiences = [
 
 const projects = [
   {
+    name: "Malicious Link Scanner",
+    description: [
+      "Scans for phishing links and overly intrusive descriptions. Giving every job description that the user highlights a rating of 0-100.",
+      "The score of 0 means the URL has undergone all safety checks and passed any rating over 50 should be taken as a substantial risk.",
+    ],
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Brave API",
+        color: "green-text-gradient",
+      },
+      {
+        name: "URL Scanning",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link:
+      "https://github.com/Kevin-Wittlinger/Job-Post-Malicious-Link-Identifier",
+  },
+  {
+    name: "Path Accessibility App Remodel",
+    description: [
+      "Worked in collaboration with a team of 4 students and the head of Software Development at Path to improve accessibility within the path app.",
+      "Added features to aid in navigation for visually impaired users, deaf users and invisible disability users.",
+      "including live audio feedback, visual mapping for navigation, colorblind mode, and connection to magnus card.",
+    ],
+    tags: [
+      {
+        name: "Mobile App Development",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "API Integration",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AJAX (Live Updating Features)",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/Kevin-Wittlinger/PathApp",
+  },
+  {
     name: "To-do List",
     description:
       "Todo list using nextjs, react, and prisma. Checklist allows the user to cross out items put on the todo list.",
@@ -177,53 +225,6 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/Kevin-Wittlinger/Todo-List",
-  },
-  {
-    name: "Binary Search Tree",
-    description: [
-      "This project was made to replicate the node based binary tree data structure. ",
-      "The left subtree should contain nodes only smaller than the key and vice versa with the right side. ",
-    ],
-    tags: [
-      {
-        name: "Java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "eclipse",
-        color: "green-text-gradient",
-      },
-      {
-        name: "data structures",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/Kevin-Wittlinger/Binary-tree",
-  },
-  {
-    name: "Malicious Link Scanner",
-    description: [
-      "Scans for phishing links and overly intrusive descriptions. Giving every job description that the user highlights a rating of 0-100.",
-      "The score of 0 means the URL has undergone all safety checks and passed any rating over 50 should be taken as a substantial risk.",
-    ],
-    tags: [
-      {
-        name: "Racket",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Descrete Structures",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Logic",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link:
-      "https://github.com/Kevin-Wittlinger/MaliciousLinkScanner-Linkedin-Indeed-",
   },
 ];
 
