@@ -23,8 +23,8 @@ const ServiceCard = ({ index, title, icon }) => (
         }}
         //extending the cards
         className="bg-tertiary rounded-[20px] py-5 px-12 
-        min-h-[280px] flex justify-evenly items-center flex-col">
-        <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+        min-h-[380px] flex justify-evenly items-center flex-col">
+        <img src={icon} alt={title} className="w-32 h-32 object-contain" />
 
         <h3
           //Text in cards
@@ -63,8 +63,6 @@ const About = () => {
           projects, and interests.
         </p>
 
-        {/* Graduation image: place your PNG at the project public root at /graduation.png (public/graduation.png)
-            or update the src path below to point to your image in src/assets if you prefer importing it. */}
         <div className="md:w-1/3 flex justify-center">
           <img
             src={graduation}
@@ -74,7 +72,11 @@ const About = () => {
         </div>
       </motion.div>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <motion.div variants={textVariant()} className="mt-10">
+        <h2 className={styles.sectionHeadText}>Hobbies.</h2>
+      </motion.div>
+
+      <div className="mt-10 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

@@ -42,19 +42,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Badminton",
+    title: "Drawing",
     icon: web,
   },
   {
-    title: "Cooking",
+    title: "Hiking",
     icon: mobile,
   },
   {
-    title: "Working Out",
+    title: "Traveling",
     icon: backend,
   },
   {
-    title: "Animal Fanatic",
+    title: "Animals",
     icon: creator,
   },
 ];
@@ -118,12 +118,12 @@ const experiences = [
   {
     title: "Applied Models and Simulation Teacher Assistant",
     company_name: "Stevens Institute of Technology",
-    icon: tesla,
-    iconBg: "#E6DEDD",
+    icon: meta,
+    iconBg: "#912d20",
     date: "September 2025 – Present",
     points: [
-      "Graded assignments and exams for over 65 students, ensuring accurate and consistent evaluation.",
-      "Facilitated individual sessions aiding students with debugging both simulation errors and Microsoft Excel.",
+      "Evaluated and graded assignments and exams for over 65 students, ensuring accurate and consistent assessment.",
+      "Led individual sessions helping students debug simulation models and resolve Microsoft Excel issues.",
       "Demonstrated leadership by fostering students’ problem-solving skills and promoting cooperation.",
     ],
   },
@@ -131,8 +131,8 @@ const experiences = [
     title: "Social Media Marketer",
     company_name: "Fizz",
     icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "September 2025 – Present",
+    iconBg: "#a600f3",
+    date: "October 2023 – February 2024",
     points: [
       "Produced 30 daily posts to cultivate a community among students at Stevens Institute of Technology.",
       "Utilized Photoshop and Illustrator to design virtual graphics and fliers promoting events around campus.",
@@ -145,7 +145,7 @@ const experiences = [
     title: "Art Assistant",
     company_name: "Christine’s Art Studio",
     icon: starbucks,
-    iconBg: "#383E56",
+    iconBg: "#e7e0e5",
     date: "June 2021 - August 2023",
     points: [
       "Collaborated with the lead Art Teacher to facilitate engaging and educational art lessons.",
@@ -153,33 +153,6 @@ const experiences = [
       "Supported Teacher in organizing 8 public art events including Livingston Public Library’s yearly showcase.",
       "Improved expense documentation practices, leading to a 20% reduction in material costs.",
     ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
@@ -229,9 +202,11 @@ const projects = [
     source_code_link: "https://github.com/Kevin-Wittlinger/Binary-tree",
   },
   {
-    name: "Number theory Lab",
-    description:
-      "A Lab focused on learning number theory was coded through the use of racket. ",
+    name: "Malicious Link Scanner",
+    description: [
+      "Scans for phishing links and overly intrusive descriptions. Giving every job description that the user highlights a rating of 0-100.",
+      "The score of 0 means the URL has undergone all safety checks and passed any rating over 50 should be taken as a substantial risk.",
+    ],
     tags: [
       {
         name: "Racket",
@@ -247,8 +222,9 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/Kevin-Wittlinger/Lab-Topsort",
+    source_code_link:
+      "https://github.com/Kevin-Wittlinger/MaliciousLinkScanner-Linkedin-Indeed-",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
