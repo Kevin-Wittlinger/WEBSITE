@@ -160,7 +160,7 @@ const projects = [
   {
     name: "Malicious Link Scanner",
     description: [
-      "Scans for phishing links and overly intrusive descriptions. Giving every job description that the user highlights a rating of 0-100.",
+      "Scans for phishing links and overly intrusive descriptions. Giving every job description that the user highlights a rating of 0-100. ",
       "The score of 0 means the URL has undergone all safety checks and passed any rating over 50 should be taken as a substantial risk.",
     ],
     tags: [
@@ -184,9 +184,9 @@ const projects = [
   {
     name: "Path Accessibility App Remodel",
     description: [
-      "Worked in collaboration with a team of 4 students and the head of Software Development at Path to improve accessibility within the path app.",
-      "Added features to aid in navigation for visually impaired users, deaf users and invisible disability users.",
-      "including live audio feedback, visual mapping for navigation, colorblind mode, and connection to magnus card.",
+      "Worked in collaboration with a team of 4 students and the head of Software Development at Path to improve accessibility within the path app. ",
+      "Added features to aid in navigation for visually impaired users, deaf users and invisible disability users. ",
+      "including live audio feedback, visual mapping for navigation, colorblind mode, and connection to magnus card. ",
     ],
     tags: [
       {
