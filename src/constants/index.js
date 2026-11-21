@@ -239,20 +239,21 @@ const projects = [
   {
     name: "Slay the Spire 2 Tracker",
     description: [
-      "Run statistics website for Slay the Spire 2.",
-      "Players import their solo .run files, get profile-based stats and filters, and earn personal achievements like All A10 and Speedrunner.",
+      "Developed a full-stack analytics web app that parses Slay the Spire 2 save files into player performance statistics.",
+      "Designed a SQL database on Turso with run deduplication by seed and start time, deployed through Vercel serverless functions.",
+      "Secured user accounts with salted scrypt password hashing, expiring session cookies, and database-backed rate limiting.",
     ],
     tags: [
       {
-        name: "JavaScript",
+        name: "Full-Stack Development",
         color: "blue-text-gradient",
       },
       {
-        name: "SQL (Turso)",
+        name: "Database Design",
         color: "green-text-gradient",
       },
       {
-        name: "Vercel",
+        name: "Authentication",
         color: "pink-text-gradient",
       },
     ],
