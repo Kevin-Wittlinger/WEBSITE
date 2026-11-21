@@ -4,7 +4,6 @@ import {
   naraDeer,
   parrot,
   javascript,
-  python,
   typescript,
   html,
   css,
@@ -75,10 +74,6 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "Python",
-    icon: python,
   },
   {
     name: "TypeScript",
@@ -178,6 +173,8 @@ const certifications = [
     status: "earned",
     description:
       "Certified in measuring and analyzing website traffic and user behavior with Google Analytics. Valid through August 2027.",
+    verify_link:
+      "https://skillshop.credential.net/0c356a29-24be-44fe-9d2e-da0581002273",
   },
   {
     name: "CompTIA Security+",
