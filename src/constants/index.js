@@ -1,8 +1,8 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
+  drawing,
+  hiking,
+  naraDeer,
+  parrot,
   javascript,
   typescript,
   html,
@@ -15,14 +15,13 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  stevens,
+  fizz,
+  christinesArtStudio,
+  linkScanner,
+  pathApp,
+  todoList,
 } from "../assets";
 
 export const navLinks = [
@@ -43,19 +42,19 @@ export const navLinks = [
 const services = [
   {
     title: "Drawing",
-    icon: web,
+    icon: drawing,
   },
   {
     title: "Hiking",
-    icon: mobile,
+    icon: hiking,
   },
   {
     title: "Traveling",
-    icon: backend,
+    icon: naraDeer,
   },
   {
     title: "Animals",
-    icon: creator,
+    icon: parrot,
   },
 ];
 
@@ -118,7 +117,7 @@ const experiences = [
   {
     title: "Applied Models and Simulation Teacher Assistant",
     company_name: "Stevens Institute of Technology",
-    icon: meta,
+    icon: stevens,
     iconBg: "#912d20",
     date: "September 2025 – Present",
     points: [
@@ -130,7 +129,7 @@ const experiences = [
   {
     title: "Social Media Marketer",
     company_name: "Fizz",
-    icon: tesla,
+    icon: fizz,
     iconBg: "#a600f3",
     date: "October 2023 – February 2024",
     points: [
@@ -144,7 +143,7 @@ const experiences = [
   {
     title: "Art Assistant",
     company_name: "Christine’s Art Studio",
-    icon: starbucks,
+    icon: christinesArtStudio,
     iconBg: "#e7e0e5",
     date: "June 2021 - August 2023",
     points: [
@@ -177,7 +176,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: linkScanner,
     source_code_link:
       "https://github.com/Kevin-Wittlinger/Job-Post-Malicious-Link-Identifier",
   },
@@ -202,7 +201,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: pathApp,
     source_code_link: "https://github.com/Kevin-Wittlinger/PathApp",
   },
   {
@@ -223,7 +222,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: todoList,
     source_code_link: "https://github.com/Kevin-Wittlinger/Todo-List",
   },
 ];

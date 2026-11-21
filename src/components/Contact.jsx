@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -7,38 +7,30 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-//CFupEvMdejoLCcUoK
-//template_xr780q9
-//service_qlo9iyq
+// EmailJS identifiers (the public key is designed to be exposed client-side)
+const EMAILJS_SERVICE_ID = "service_qlo9iyq";
+const EMAILJS_TEMPLATE_ID = "template_xr780q9";
+const EMAILJS_PUBLIC_KEY = "CFupEvMdejoLCcUoK";
+
+const EMPTY_FORM = { name: "", email: "", message: "" };
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
+  const [form, setForm] = useState(EMPTY_FORM);
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({ ...form, [name]: value });
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    //Sending to emailjs.com
-
     emailjs
       .send(
-        "service_qlo9iyq",
-        "template_xr780q9",
-
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Kevin Wittlinger",
@@ -46,18 +38,13 @@ const Contact = () => {
           to_email: "kwittlinger22@gmail.com",
           message: form.message,
         },
-        "CFupEvMdejoLCcUoK"
+        EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
+          setForm(EMPTY_FORM);
         },
         (error) => {
           setLoading(false);
@@ -79,7 +66,6 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
         {/* Creating the form which users will be filling in */}
         <form
-          ref={formRef}
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8">
           <label className="flex flex-col">
@@ -100,7 +86,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What's your email address?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -111,13 +97,14 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What you want to say?"
+              placeholder="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           {/* send button */}
           <button
             type="submit"
+            disabled={loading}
             className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary">
             {loading ? "Sending..." : "Send"}
           </button>

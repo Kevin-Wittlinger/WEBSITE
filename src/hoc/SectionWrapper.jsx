@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { staggerContainer } from "../utils/motion";
 
-const StarWrapper = (Component, idName) =>
+const SectionWrapper = (Component, idName) =>
   function HOC() {
     return (
-      //this animates the cards
+      // Animates each section into view once as the user scrolls
       <motion.section
         variants={staggerContainer()}
         initial="hidden"
@@ -21,4 +21,4 @@ const StarWrapper = (Component, idName) =>
     );
   };
 
-export default StarWrapper;
+export default SectionWrapper;

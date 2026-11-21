@@ -1,4 +1,3 @@
-import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -19,8 +18,8 @@ const ExperienceCard = ({ experience }) => {
         background: "#1d1836",
         color: "#fcfcfc",
       }}
-      //
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+
+      contentArrowStyle={{ borderRight: "7px solid #232631" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={

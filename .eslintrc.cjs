@@ -12,9 +12,19 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
+    // This project doesn't use PropTypes.
+    'react/prop-types': 'off',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
     ],
   },
+  overrides: [
+    {
+      // React Three Fiber elements take three.js props (position, intensity, ...)
+      // that the DOM-oriented rule doesn't recognise.
+      files: ['src/components/canvas/**/*.jsx'],
+      rules: { 'react/no-unknown-property': 'off' },
+    },
+  ],
 }
