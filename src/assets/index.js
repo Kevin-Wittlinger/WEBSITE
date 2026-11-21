@@ -35,7 +35,7 @@ import christinesArtStudio from "./company/christines-art-studio.png";
 // Projects
 import linkScanner from "./projects/link-scanner.png";
 import pathApp from "./projects/path-app.png";
-import todoList from "./projects/todo-list.png";
+import sts2Tracker from "./projects/sts2-tracker.png";
 
 export {
   logo,
@@ -66,5 +66,5 @@ export {
   christinesArtStudio,
   linkScanner,
   pathApp,
-  todoList,
+  sts2Tracker,
 };

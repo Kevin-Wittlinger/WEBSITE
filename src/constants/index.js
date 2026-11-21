@@ -21,7 +21,7 @@ import {
   christinesArtStudio,
   linkScanner,
   pathApp,
-  todoList,
+  sts2Tracker,
 } from "../assets";
 
 export const navLinks = [
@@ -205,25 +205,26 @@ const projects = [
     source_code_link: "https://github.com/Kevin-Wittlinger/PathApp",
   },
   {
-    name: "To-do List",
+    name: "Slay the Spire 2 Tracker",
     description:
-      "Todo list using nextjs, react, and prisma. Checklist allows the user to cross out items put on the todo list.",
+      "Run statistics website for Slay the Spire 2. Players import their solo .run files, get profile-based stats and filters, and earn personal achievements like All A10 and Speedrunner.",
     tags: [
       {
-        name: "Nextjs",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "Prisma",
+        name: "SQL (Turso)",
         color: "green-text-gradient",
       },
       {
-        name: "React",
+        name: "Vercel",
         color: "pink-text-gradient",
       },
     ],
-    image: todoList,
-    source_code_link: "https://github.com/Kevin-Wittlinger/Todo-List",
+    image: sts2Tracker,
+    source_code_link:
+      "https://github.com/Kevin-Wittlinger/Slay_The_Spire2-Tracker",
   },
 ];
 
