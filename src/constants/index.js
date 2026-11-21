@@ -4,6 +4,7 @@ import {
   naraDeer,
   parrot,
   javascript,
+  python,
   typescript,
   html,
   css,
@@ -32,6 +33,10 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "certifications",
+    title: "Certifications",
   },
   {
     id: "contact",
@@ -70,6 +75,10 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
+  },
+  {
+    name: "Python",
+    icon: python,
   },
   {
     name: "TypeScript",
@@ -115,64 +124,90 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Applied Models and Simulation Teacher Assistant",
+    title: "Lead Art Assistant",
+    company_name: "Christine’s Art Studio",
+    icon: christinesArtStudio,
+    iconBg: "#e7e0e5",
+    date: "June 2021 – Present",
+    points: [
+      "Collaborated with the Art Teacher to facilitate engaging and educational art classes ranging from 8–12 students.",
+      "Supported the Teacher in organizing 8 public art events, including Livingston Public Library’s yearly showcase.",
+      "Improved expense documentation practices, leading to a 20% reduction in material costs.",
+    ],
+  },
+  {
+    title: "Applied Models & Simulation Teacher Assistant",
     company_name: "Stevens Institute of Technology",
     icon: stevens,
     iconBg: "#912d20",
-    date: "September 2025 – Present",
+    date: "September 2025 – January 2026",
     points: [
       "Evaluated and graded assignments and exams for over 65 students, ensuring accurate and consistent assessment.",
-      "Led individual sessions helping students debug simulation models and resolve Microsoft Excel issues.",
+      "Led teaching sessions helping students debug Excel simulation models and refine data forecasting accuracy.",
       "Demonstrated leadership by fostering students’ problem-solving skills and promoting cooperation.",
     ],
   },
   {
     title: "Social Media Marketer",
-    company_name: "Fizz",
+    company_name: "Fizz Social Corp",
     icon: fizz,
     iconBg: "#a600f3",
     date: "October 2023 – February 2024",
     points: [
+      "Analyzed engagement metrics of 10,000+ users to refine content strategy and improve user retention by 16%.",
       "Produced 30 daily posts to cultivate a community among students at Stevens Institute of Technology.",
       "Utilized Photoshop and Illustrator to design virtual graphics and fliers promoting events around campus.",
-      "Engaged in marketing efforts to promote a new marketplace feature to over 10,000 students at Stevens.",
-      "Maintained oversight over the app through flagging behavior that conflicted with the code of conduct of Fizz.",
-      "Hosted weekly Zoom meetings collaborating with employees and students to improve content generation.",
     ],
   },
+];
+
+const certifications = [
   {
-    title: "Art Assistant",
-    company_name: "Christine’s Art Studio",
-    icon: christinesArtStudio,
-    iconBg: "#e7e0e5",
-    date: "June 2021 - August 2023",
-    points: [
-      "Collaborated with the lead Art Teacher to facilitate engaging and educational art lessons.",
-      "Provided individualized guidance to 8-12 students ranging from 2nd-9th grade, with varying skill levels.",
-      "Supported Teacher in organizing 8 public art events including Livingston Public Library’s yearly showcase.",
-      "Improved expense documentation practices, leading to a 20% reduction in material costs.",
-    ],
+    name: "Google IT Support Professional Certificate",
+    issuer: "Google · Coursera",
+    date: "November 2026",
+    status: "earned",
+    description:
+      "Six-course program covering technical support, computer networking, operating systems, system administration, and IT security.",
+    verify_link: "https://coursera.org/verify/professional-cert/45HEI1PAL3WH",
+  },
+  {
+    name: "Google Analytics Certification",
+    issuer: "Google · Skillshop",
+    date: "August 2026",
+    status: "earned",
+    description:
+      "Certified in measuring and analyzing website traffic and user behavior with Google Analytics. Valid through August 2027.",
+  },
+  {
+    name: "CompTIA Security+",
+    issuer: "CompTIA",
+    date: "Expected December 2026",
+    status: "in-progress",
+    description:
+      "Industry-standard certification in core cybersecurity skills: threat detection, risk management, and network security.",
   },
 ];
 
 const projects = [
   {
-    name: "Malicious Link Scanner",
+    name: "Job Post Malicious Link Identifier",
     description: [
-      "Scans for phishing links and overly intrusive descriptions. Giving every job description that the user highlights a rating of 0-100. ",
-      "The score of 0 means the URL has undergone all safety checks and passed any rating over 50 should be taken as a substantial risk.",
+      "Cybersecurity browser extension that identifies malicious job-posting practices on Indeed and LinkedIn.",
+      "Uses AI-assisted detection logic to scan for impersonation, domain spoofing, and early-stage data harvesting.",
+      "Its risk-based detection system flagged 11.7% of job postings for notable security concerns.",
     ],
     tags: [
       {
-        name: "JavaScript",
+        name: "AI Agent",
         color: "blue-text-gradient",
       },
       {
-        name: "Brave API",
+        name: "Phishing Detection",
         color: "green-text-gradient",
       },
       {
-        name: "URL Scanning",
+        name: "URL Parsing",
         color: "pink-text-gradient",
       },
     ],
@@ -181,15 +216,15 @@ const projects = [
       "https://github.com/Kevin-Wittlinger/Job-Post-Malicious-Link-Identifier",
   },
   {
-    name: "Path Accessibility App Remodel",
+    name: "Port Authority PATH App Redesign",
     description: [
-      "Worked in collaboration with a team of 4 students and the head of Software Development at Path to improve accessibility within the path app. ",
-      "Added features to aid in navigation for visually impaired users, deaf users and invisible disability users. ",
-      "including live audio feedback, visual mapping for navigation, colorblind mode, and connection to magnus card. ",
+      "Redesigned PATH’s mobile app with its in-house software team to improve accessibility for users with disabilities.",
+      "Integrated the Magnusmode and GoodMaps APIs to give users accessibility support tools and live navigation news.",
+      "Presented at the Stevens Innovation Expo to ~20,000 visitors, with a 92% approval rating.",
     ],
     tags: [
       {
-        name: "Mobile App Development",
+        name: "App Development",
         color: "blue-text-gradient",
       },
       {
@@ -197,7 +232,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "AJAX (Live Updating Features)",
+        name: "AJAX",
         color: "pink-text-gradient",
       },
     ],
@@ -206,8 +241,10 @@ const projects = [
   },
   {
     name: "Slay the Spire 2 Tracker",
-    description:
-      "Run statistics website for Slay the Spire 2. Players import their solo .run files, get profile-based stats and filters, and earn personal achievements like All A10 and Speedrunner.",
+    description: [
+      "Run statistics website for Slay the Spire 2.",
+      "Players import their solo .run files, get profile-based stats and filters, and earn personal achievements like All A10 and Speedrunner.",
+    ],
     tags: [
       {
         name: "JavaScript",
@@ -228,4 +265,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, technologies, experiences, certifications, projects };

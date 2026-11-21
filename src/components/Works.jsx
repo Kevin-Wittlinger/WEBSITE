@@ -49,7 +49,15 @@ const ProjectCard = ({
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          {Array.isArray(description) ? (
+            <ul className="mt-2 list-disc ml-4 space-y-1 text-secondary text-[14px]">
+              {description.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          )}
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
